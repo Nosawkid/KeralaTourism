@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerala Tourism</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <img
+            src="./Assets/Images/Logo.png"
+            alt="Kerala tourism registered logo"
+            width="150"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#top-destinations">Top Destinations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#districts">Districts</a></li>
+            <li><button>Login</button></li>
+            <li><button>Register</button></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <h1>COME AND ENJOY OUR CULTURE</h1>
+        <a href="#about">Learn More</a>
+        <a href="#contact">Contact</a>
+      </section>
+
+      <section id="top-destinations">
+        <h1>Top Destination</h1>
+        <article>
+          <img width="450" src="./Assets/Images/thekukedi.jpg" alt="" />
+          <p>Thekkukudi Cave Temple, Pathanamthitta</p>
+        </article>
+        <article>
+          <img
+            width="450"
+            src="./Assets/Images/museum_of_kerala_history1.jpg"
+            alt=""
+          />
+          <p>Muesum Of Kerala History</p>
+        </article>
+        <article>
+          <img width="450" src="./Assets/Images/kalamandalam2.jpg" alt="" />
+          <p>Kerala Kalamandalam</p>
+        </article>
+        <article>
+          <img width="450" src="./Assets/Images/mannar1.jpg" alt="" />
+          <p>Mannar</p>
+        </article>
+      </section>
+      <section id="about">
+        <h1>About</h1>
+        <img width="250" src="./Assets/Images/map.jpg" alt="Kerala Map" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          tenetur, voluptatem esse laboriosam quis minima quidem provident
+          asperiores fugit ipsa sed aspernatur sit ipsum alias enim debitis eius
+          facilis. Porro. Tempora quisquam provident neque unde. Molestiae,
+          corrupti. Facere corporis quas repudiandae architecto exercitationem
+          ipsum id dicta sit officiis, quidem illo fuga reiciendis amet, autem a
+          nostrum quia veniam totam aliquam?
+        </p>
+      </section>
+
+      <section>
+        <h1>Districts</h1>
+        <ol>
+          <li><a href="#">Alappuzha</a></li>
+          <li><a href="#">Ernakulam</a></li>
+          <li><a href="#">Idukki</a></li>
+          <li><a href="#">Kannur</a></li>
+          <li><a href="#">Kasaragod</a></li>
+          <li><a href="#">Kollam</a></li>
+          <li><a href="#">Kottayam</a></li>
+          <li><a href="#">Kozhikode</a></li>
+          <li><a href="#">Malappuram</a></li>
+          <li><a href="#">Palakkad</a></li>
+          <li><a href="#">Pathanamthitta</a></li>
+          <li><a href="#">Thiruvananthapuram</a></li>
+          <li><a href="#">Thrissur</a></li>
+          <li><a href="#">Wayanad</a></li>
+        </ol>
+      </section>
+      <section>
+        <!-- Form -->
+        <form action="">
+          <fieldset>
+            <legend><b>Contact Form</b></legend>
+            <div>
+              <label for="name">Name</label>
+              <input required maxlength="20" type="text" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input required type="email" />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                type="text"
+                pattern="\d{10}"
+                title="Please enter exactly 10 digits"
+                required
+              />
+            </div>
+            <div>
+              <label for="district">District</label>
+              <select required name="district" id="districts">
+                <option value="">Alappuzha</option>
+                <option value="">Alappuzha</option>
+                <option value="">Alappuzha</option>
+              </select>
+            </div>
+          </fieldset>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>&copy; 2024</footer>
+  </body>
+</html>
