@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kerala Tourism</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <header>
+      <header class="header">
         <div class="logo">
           <img
             src="./Assets/Images/Logo.png"
@@ -16,13 +17,19 @@
           />
         </div>
         <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#top-destinations">Top Destinations</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#districts">Districts</a></li>
-            <li><button>Login</button></li>
-            <li><button>Register</button></li>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link">
+              <a href="#top-destinations">Top Destinations</a>
+            </li>
+            <li class="nav-link"><a href="#about">About Us</a></li>
+            <li class="nav-link"><a href="#districts">Districts</a></li>
+            <li class="nav-link">
+              <button><a href="#contact">Login</a></button>
+            </li>
+            <li class="nav-link">
+              <button><a href="#contact">Register</a></button>
+            </li>
           </ul>
         </nav>
       </header>
@@ -89,7 +96,7 @@
           <li><a href="#">Wayanad</a></li>
         </ol>
       </section>
-      <section>
+      <section id="contact">
         <!-- Form -->
         <form action="" method="post">
           <fieldset>
