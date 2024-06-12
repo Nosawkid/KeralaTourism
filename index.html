@@ -96,7 +96,13 @@
             <legend><b>Contact Form</b></legend>
             <div>
               <label for="name">Name</label>
-              <input required maxlength="20" type="text" />
+              <input
+                required
+                maxlength="20"
+                type="text"
+                pattern="[A-Za-z\s]+"
+                title="Name should only contain letters and spaces."
+              />
             </div>
             <div>
               <label for="email">Email</label>
