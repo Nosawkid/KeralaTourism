@@ -5,146 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kerala Tourism</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <header class="header">
-        <div class="logo">
-          <img
-            src="./Assets/Images/Logo.png"
-            alt="Kerala tourism registered logo"
-            width="150"
-          />
+      <section class="top-container">
+        <header class="header">
+          <div class="logo">
+            <img
+              src="./Assets/Images/Logo.png"
+              alt="Kerala tourism registered logo"
+              width="150"
+            />
+          </div>
+          <nav>
+            <ul class="nav-links flex">
+              <li class="nav-link"><a href="#">Home</a></li>
+              <li class="nav-link"><a href="#districts">Districts</a></li>
+              <li class="nav-link"><a href="#about">About Us</a></li>
+              <li class="nav-link">
+                <a class="secondary-btn" href="#contact">Login</a>
+              </li>
+              <li class="nav-link">
+                <a class="primary-btn" href="#contact">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="hero-section flex">
+          <h1>
+            COME AND ENJOY <br />
+            OUR CULTURE
+          </h1>
+          <div class="hero-btns flex">
+            <a href="#about" class="secondary-btn">Learn More</a>
+            <a href="#contact" class="primary-btn">Contact</a>
+          </div>
         </div>
-        <nav>
-          <ul class="nav-links">
-            <li class="nav-link"><a href="#">Home</a></li>
-            <li class="nav-link">
-              <a href="#top-destinations">Top Destinations</a>
-            </li>
-            <li class="nav-link"><a href="#about">About Us</a></li>
-            <li class="nav-link"><a href="#districts">Districts</a></li>
-            <li class="nav-link">
-              <button><a href="#contact">Login</a></button>
-            </li>
-            <li class="nav-link">
-              <button><a href="#contact">Register</a></button>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <section>
-        <h1>COME AND ENJOY OUR CULTURE</h1>
-        <a href="#about">Learn More</a>
-        <a href="#contact">Contact</a>
       </section>
 
-      <section id="top-destinations">
-        <h1>Top Destination</h1>
-        <article>
-          <img width="450" src="./Assets/Images/thekukedi.jpg" alt="" />
-          <p>Thekkukudi Cave Temple, Pathanamthitta</p>
-        </article>
-        <article>
+      <section class="top-destinations" id="top-destinations">
+        <h2 class="section-title">Top Destinations</h2>
+        <div class="destinations-container">
+          <article class="destination">
+            <h3 class="destination-title">Thekkukudi Cave Temple</h3>
+            <img src="./Assets/Images/thekukedi.jpg" alt="" />
+          </article>
+          <article class="destination">
+            <h3 class="destination-title">Muesum Of Kerala</h3>
+            <img src="./Assets/Images/museum_of_kerala_history1.jpg" alt="" />
+          </article>
+          <article class="destination">
+            <h3 class="destination-title">Kerala Kalamandalam</h3>
+            <img src="./Assets/Images/kalamandalam2.jpg" alt="" />
+          </article>
+          <article class="destination">
+            <h3 class="destination-title">Mannar</h3>
+            <img src="./Assets/Images/mannar1.jpg" alt="" />
+          </article>
+        </div>
+        <button class="primary-btn btn" id="see-more">See More</button>
+      </section>
+      <section id="about" class="about">
+        <h2 class="section-title about-title">About Kerala</h2>
+        <div class="about-container">
+          <p class="para-1">
+            Indias most verdant state ,rated by National Geographic Traveller as
+            one of the worlds 50 must-see destinations, is a paradisiacal
+            landscape of palm-lined beaches, steamy jungles, plantation-covered
+            hills, and tropical rivers and lakes. Visitors come here primarily
+            to unwind and indulge; this is, after all, where succumbing to a
+            therapeutic Ayurvedic massage is as mandatory as idling away an
+            afternoon aboard a slowly drifting kettuvallam, or sipping coconut
+            water under a tropical sun before taking in a wonderfully ritualized
+            Kathakali dance. Eastward, the spice-scented Cardamom Hills and wild
+            elephants of Periyar beckon, while a short flight west takes you to
+            the little-known but sublime tropical reefs of the Lakshadweep
+            islands. A thin strip on the southwest coastline, sandwiched between
+            the Lakshadweep Sea and the forested Western Ghats that define its
+            border with Tamil Nadu to the east, Kerala covers a mere 1.3% of the
+            countrys total land area, yet its rich resources have long attracted
+            visitors from across the oceans. It is in fact here that the first
+            seafarers set foot on Indian soil. It is believed that Kerala has
+            had trade links with Egypt,Rome, Arabia and China.
+          </p>
           <img
-            width="450"
-            src="./Assets/Images/museum_of_kerala_history1.jpg"
-            alt=""
+            src="./Assets/Images/kerala-political-map.jpg"
+            alt="Kerala political Map"
           />
-          <p>Muesum Of Kerala History</p>
-        </article>
-        <article>
-          <img width="450" src="./Assets/Images/kalamandalam2.jpg" alt="" />
-          <p>Kerala Kalamandalam</p>
-        </article>
-        <article>
-          <img width="450" src="./Assets/Images/mannar1.jpg" alt="" />
-          <p>Mannar</p>
-        </article>
-      </section>
-      <section id="about">
-        <h1>About</h1>
-        <img width="250" src="./Assets/Images/map.jpg" alt="Kerala Map" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          tenetur, voluptatem esse laboriosam quis minima quidem provident
-          asperiores fugit ipsa sed aspernatur sit ipsum alias enim debitis eius
-          facilis. Porro. Tempora quisquam provident neque unde. Molestiae,
-          corrupti. Facere corporis quas repudiandae architecto exercitationem
-          ipsum id dicta sit officiis, quidem illo fuga reiciendis amet, autem a
-          nostrum quia veniam totam aliquam?
-        </p>
+          <p>
+            Contemporary Kerala was created in 1956 from the former princely
+            states of Travancore, Kochi, and Malabar. Largely ruled by
+            benevolent Maharajas who introduced social reforms emphasizing the
+            provision of education and basic services, Kerala remains one of the
+            most progressive, literate, and educated states in post-independence
+            India. In 1957, it became the first place in the world to
+            democratically elect a Communist government, and the first Indian
+            state to successfully introduce a family-planning programme.
+          </p>
+        </div>
       </section>
 
       <section>
-        <h1>Districts</h1>
-        <ol>
-          <li><a href="#">Alappuzha</a></li>
-          <li><a href="#">Ernakulam</a></li>
-          <li><a href="#">Idukki</a></li>
-          <li><a href="#">Kannur</a></li>
-          <li><a href="#">Kasaragod</a></li>
-          <li><a href="#">Kollam</a></li>
-          <li><a href="#">Kottayam</a></li>
-          <li><a href="#">Kozhikode</a></li>
-          <li><a href="#">Malappuram</a></li>
-          <li><a href="#">Palakkad</a></li>
-          <li><a href="#">Pathanamthitta</a></li>
-          <li><a href="#">Thiruvananthapuram</a></li>
-          <li><a href="#">Thrissur</a></li>
-          <li><a href="#">Wayanad</a></li>
-        </ol>
+        <h1 class="section-title">Our Districts</h1>
+        <div class="districts-container">
+          <div class="district">
+            <img
+              src="./Assets/Images/Districts/tvm.jpg"
+              alt="Thiruvananthapuram"
+            />
+            <p class="district-name">Thiruvananthapuram</p>
+          </div>
+          <div class="district">
+            <img src="./Assets/Images/Districts/ktym.jpg" alt="Kottayam" />
+            <p class="district-name">Kottayam</p>
+          </div>
+          <div class="district">
+            <img src="./Assets/Images/Districts/ekm.jpg" alt="Ernakulam" />
+            <p class="district-name">Ernakulam</p>
+          </div>
+          <div class="district">
+            <img src="./Assets/Images/Districts/alappey.jpg" alt="Alappuzha" />
+            <p class="district-name">Alappuzha</p>
+          </div>
+          <div class="district">
+            <img src="./Assets/Images/Districts/wynd.jpg" alt="Wayanad" />
+            <p class="district-name">Wayanad</p>
+          </div>
+          <div class="district">
+            <img src="./Assets/Images/Districts/plkd.jpg" alt="Palakkad" />
+            <p class="district-name">Palakkad</p>
+          </div>
+        </div>
+        <button class="primary-btn btn" id="see-more">See More</button>
       </section>
       <section id="contact">
-        <!-- Form -->
-        <form action="" method="post">
-          <fieldset>
-            <legend><b>Contact Form</b></legend>
-            <div>
-              <label for="name">Name</label>
-              <input
-                required
-                maxlength="20"
-                type="text"
-                pattern="[A-Za-z\s]+"
-                title="Name should only contain letters and spaces."
-              />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input required type="email" />
-            </div>
-            <div>
-              <label for="phone">Phone Number</label>
-              <input
-                type="text"
-                pattern="\d{10}"
-                title="Please enter exactly 10 digits"
-                required
-              />
-            </div>
-            <div>
-              <label for="district">District</label>
-              <select required name="district" id="districts">
-                <option value="Alappuzha">Alappuzha</option>
-                <option value="Ernakulam">Ernakulam</option>
-                <option value="Idukki">Idukki</option>
-                <option value="Kannur">Kannur</option>
-                <option value="Kasaragod">Kasaragod</option>
-                <option value="Kollam">Kollam</option>
-                <option value="Kottayam">Kottayam</option>
-                <option value="Kozhikode">Kozhikode</option>
-                <option value="Malappuram">Malappuram</option>
-                <option value="Palakkad">Palakkad</option>
-                <option value="Pathanamthitta">Pathanamthitta</option>
-                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
-                <option value="Thrissur">Thrissur</option>
-                <option value="Wayanad">Wayanad</option>
-              </select>
-            </div>
-          </fieldset>
-          <button>Submit</button>
+        <form method="post">
+          <h2>Enquiry for booking</h2>
+          <div>
+            <input
+              required
+              maxlength="20"
+              type="text"
+              pattern="[A-Za-z\s]+"
+              title="Name should only contain letters and spaces."
+              placeholder="Name"
+            />
+          </div>
+          <div>
+            <input placeholder="Email ID" required type="email" />
+          </div>
+          <div>
+            <input
+              placeholder="Phone Number"
+              type="text"
+              pattern="\d{10}"
+              title="Please enter exactly 10 digits"
+              required
+            />
+          </div>
+          <div>
+            <select required name="district" id="districts">
+              <option value="Alappuzha">Alappuzha</option>
+              <option value="Ernakulam">Ernakulam</option>
+              <option value="Idukki">Idukki</option>
+              <option value="Kannur">Kannur</option>
+              <option value="Kasaragod">Kasaragod</option>
+              <option value="Kollam">Kollam</option>
+              <option value="Kottayam">Kottayam</option>
+              <option value="Kozhikode">Kozhikode</option>
+              <option value="Malappuram">Malappuram</option>
+              <option value="Palakkad">Palakkad</option>
+              <option value="Pathanamthitta">Pathanamthitta</option>
+              <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+              <option value="Thrissur">Thrissur</option>
+              <option value="Wayanad">Wayanad</option>
+            </select>
+          </div>
+
+          <button class="btn primary-btn submit-btn">Submit</button>
         </form>
       </section>
     </main>

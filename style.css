@@ -1,36 +1,265 @@
-.header {
+:root {
+  --main-color: #0baf4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald";
+  width: 100%;
+}
+
+/* Header and Intro */
+
+.top-container {
+  background-image: url("./Assets/Images/main-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 100vh;
+}
+
+header {
   display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
   align-items: center;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo img {
+  width: 100%;
 }
 
 .nav-links {
-  display: flex;
-  gap: 5px;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
+}
+
+.hero-section {
+  flex-direction: column;
+  gap: 20px;
+  height: 80%;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-btns {
+  gap: 15px;
+}
+
+/* Destinations */
+
+.destinations-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.destination {
+  width: 70%;
+  margin: 20px 0;
+}
+
+.destination h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+  width: fit-content;
+}
+
+.destination-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: var(--main-color);
+  bottom: -5px;
+}
+.destination img {
+  margin-top: 15px;
+  width: 100%;
+}
+
+#see-more {
+  display: block;
+  margin: 20px auto 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* About */
+
+.about-title {
+  margin-left: auto;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 200px 100px;
+  justify-items: center;
+  text-align: justify;
+  gap: 10px;
+}
+
+.about p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.nav-link {
-  list-style: none;
+.about-container img {
+  width: 60%;
 }
 
-.nav-link a {
+/* Districts */
+
+.districts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 20px;
+}
+
+.district {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.district img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.district-name {
+  font-weight: bold;
+}
+
+/* Contact Form */
+
+form {
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+form div {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  outline: transparent;
+}
+
+input:placeholder-shown {
+  font-size: 20px;
+}
+
+form select {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.497);
+  border: none;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+option {
+  font-size: 20px;
+}
+
+.submit-btn {
+  margin: 15px auto;
+  display: block;
+}
+
+/* Utils */
+
+a {
   text-decoration: none;
-  color: black;
-  padding: 10px;
-}
-
-.nav-link a:hover {
-  background-color: green;
   color: white;
 }
 
-.nav-link button {
-  background-color: white;
-  border: none;
-  font-weight: inherit;
-  font-size: inherit;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  color: #ffffff;
+}
+
+.primary-btn {
+  background-color: var(--main-color);
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 3px solid var(--main-color);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 3px solid var(--main-color);
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+section:not(:first-child) {
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 50px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+  width: fit-content;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 5px;
+  background-color: var(--main-color);
+  bottom: -5px;
+  left: 0;
 }
